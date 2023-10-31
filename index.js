@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: false }));
 app.get("/", async (req, res) => { 
   res.json("nodemailer server connected")
 })
-const router = require("./routes");
+const router = require("./src/routes");
 app.use("", router);
 
 
